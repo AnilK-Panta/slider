@@ -1,0 +1,85 @@
+body {
+  background: radial-gradient(
+    50% 49.95% at 50% 50.05%,
+    #ffffff 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  width: 100%;
+  height: 100vh;
+}
+
+h1 {
+  color: black;
+  font-size: 36px;
+  font-weight: bold;
+  text-align: start;
+}
+.imgBanner {
+  height: 500px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: #3b88d0;
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  border-radius: 6px;
+  top: 70%;
+}
+/* .carousel-control-prev {
+  left: 15%;
+}
+.carousel-control-next {
+  left: 20%;
+} */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 20px;
+}
+.btnClick {
+  padding: 8px 16px;
+  width: 150px;
+  background-color: #3b88d0;
+  color: white;
+  font-size: 15px;
+  border-radius: 20px;
+}
+.carousel-caption {
+  position: absolute;
+  bottom: 30%;
+}
+.imgBanner::after {
+  content: "";
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  background: linear-gradient(90deg, #dddddd 0%, rgba(255, 255, 255, 0) 100%);
+}
+.btnWrap {
+  position: relative;
+  width: 100px;
+  bottom: 133px;
+  left: 15%;
+}
+.socialIcons {
+  margin-top: 16px;
+  display: flex;
+  gap: 8px;
+  width: fit-content;
+}
+.fa-id-card {
+  font-size: 24px;
+  color: #03396b;
+  cursor: pointer;
+}
+.socialIcons p {
+  display: none;
+  font-size: 13px;
+  font-weight: 500;
+}
+.socialIcons:hover p {
+  display: block;
+}
